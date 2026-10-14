@@ -43,15 +43,22 @@ def compact(p):
 
 selected = '\n'.join(card(p) for p in pubs if p.get('selected'))
 other = '\n'.join(compact(p) for p in pubs if not p.get('selected'))
+# Both pages share the same wording; homepage links only add presentation.
+research = escape(profile['research_statement'])
+homepage_research = research.replace('human experience (体感)', '<strong>human experience (<span lang="zh-CN">体感</span>)</strong>')
+for phrase, target in [('outcome alignment', 'tigan'), ('shared understanding in collaboration', 'ioa'), ('reliable interaction with tools and environments', 'align')]:
+    homepage_research = homepage_research.replace(phrase, f'<a href="#{target}">{phrase}</a>')
 template = (ROOT / 'tools/index.template.html').read_text()
-html = template.replace('{{SELECTED}}', selected).replace('{{OTHER}}', other)
+html = template.replace('{{SELECTED}}', selected).replace('{{OTHER}}', other).replace('{{RESEARCH}}', homepage_research)
 html = html.replace('{{SCHOLAR}}', escape(profile['scholar'], quote=True)).replace('{{UPDATED}}', profile['updated'])
 (ROOT / 'index.html').write_text(html)
 # Only selected entries are exported as arXiv BibTeX; conference author lists
 # can differ from the original preprints of other publications.
 (ROOT / 'publications.bib').write_text('\n\n'.join(bib(p) for p in pubs if p.get('selected')) + '\n')
 
-cv_pubs = '\n'.join(f'<li><a href="{paper_url(p)}"><strong>{escape(p["title"])}</strong></a><br>{authors(p)}<br><span class="cv-venue">{escape(p["venue"])}</span></li>' for p in pubs)
-cv = (ROOT / 'tools/cv.template.html').read_text().replace('{{PUBLICATIONS}}', cv_pubs).replace('{{RESEARCH}}', escape(profile['research_statement'])).replace('{{UPDATED}}', profile['updated'])
+# The selected collection contains the four first/co-first-author papers.
+cv_papers = [p for p in pubs if p.get('selected')]
+cv_pubs = '\n'.join(f'<li><a href="{paper_url(p)}"><strong>{escape(p["title"])}</strong></a><br>{authors(p)}<br><span class="cv-venue">{escape(p["venue"])}</span></li>' for p in cv_papers)
+cv = (ROOT / 'tools/cv.template.html').read_text().replace('{{PUBLICATIONS}}', cv_pubs).replace('{{RESEARCH}}', research).replace('{{UPDATED}}', profile['updated'])
 (ROOT / 'cv.html').write_text(cv)
-print(f'Generated index.html, cv.html, and publications.bib ({len(pubs)} publications).')
+print(f'Generated index.html, cv.html, and publications.bib ({len(pubs)} homepage publications; {len(cv_papers)} CV publications).')

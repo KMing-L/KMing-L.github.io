@@ -1,14 +1,15 @@
 # Kaiming Liu — academic homepage
 
-Public site: https://kming-l.github.io/
+Website: https://kming-l.github.io/
 
 A small, responsive academic homepage for GitHub Pages. The warm background, serif headings, restrained blue links, and publication layout are inspired by [Rulin Shao's homepage](https://rulinshao.github.io/). The implementation and text are independently written.
 
 ## 修改内容
 
 - 论文：修改 `data/profile.json`。`selected: true` 的论文显示在代表作区域，其他论文显示在可展开列表中。
+- 研究兴趣：统一修改 `data/profile.json` 的 `research_statement`，主页和 CV 共用同一版本。
 - 自我介绍、News、经历：修改 `tools/index.template.html`。
-- 公开 CV：修改 `tools/cv.template.html`；研究兴趣与论文数据由 `data/profile.json` 提供。
+- 公开 CV：修改 `tools/cv.template.html`；研究兴趣与论文数据由 `data/profile.json` 提供。CV 只列出四篇一作或共同一作论文。
 - 配色和排版：修改 `assets/site.css`。
 - 照片与论文 logo：位于 `assets/`。
 
@@ -18,7 +19,7 @@ A small, responsive academic homepage for GitHub Pages. The warm background, ser
 python3 tools/build.py
 ```
 
-将修改提交到 `main` 后，GitHub Pages 会自动更新。生成的 `index.html`、`cv.html` 和 `publications.bib` 需要一起提交。网站运行不依赖 Python、Node.js 或任何框架。
+将修改推送到 `main` 后，GitHub Pages 会自动更新网站。生成的 `index.html`、`cv.html` 和 `publications.bib` 需要一起提交。网站运行不依赖 Python、Node.js 或任何框架。
 
 ## 本地预览
 
@@ -44,8 +45,8 @@ Repository Settings → Pages → Deploy from a branch → `main` → `/ (root)`
 - [ALIGN](https://arxiv.org/abs/2505.21055)：会议状态为 AACL-IJCNLP 2026 Main。
 - [AIGS](https://arxiv.org/abs/2411.11910)：前五位作者共同一作，包含 Zhenhe Zhang。
 - [Writing-RL](https://aclanthology.org/2026.acl-long.255/) 和 [EDC²-RAG](https://aclanthology.org/2025.findings-emnlp.522/)：采用正式发表版本的作者列表，可能与最早的 arXiv 版本不同。
-- MiMo-V2.6 的作者众多，主页使用团队署名，并明确标出 Kaiming Liu 属于该团队作者列表。
-- 头像来自本人的公开 Scholar 资料；TiGanEval、IoA、ALIGN 的 logo 由本人提供；AIGS 缩略图为原创示意图。
+- MiMo-V2.6 的作者众多，主页使用团队署名。
+- 头像由本人提供；TiGanEval、IoA、ALIGN 的 logo 由本人提供；AIGS 缩略图为原创示意图。
 - `publications.bib` 为四篇代表作的 arXiv 引文，不伪造尚未核验的会议卷页信息。
 - 字体已本地化；各自的 SIL Open Font License 文件保留在 `assets/fonts/`。
 
