@@ -1,0 +1,133 @@
+{
+  "name": "Kaiming Liu",
+  "email": "chatkming@gmail.com",
+  "url": "https://kming-l.github.io/",
+  "scholar": "https://scholar.google.com/citations?user=X9bm8UMAAAAJ&hl=en",
+  "github": "https://github.com/KMing-L",
+  "updated": "October 2026",
+  "research_statement": "My research centers on the human experience of AI agents: understanding what people need, reducing the effort of collaboration, and delivering outcomes that are useful in practice. I study outcome alignment, shared understanding in collaboration, and reliable interaction with tools and environments. My goal is to build agents that fit naturally into people's work.",
+  "publications": [
+    {
+      "id": "tigan",
+      "short": "TiGanEval",
+      "title": "Instructions Are Evidence, Not Objectives: Measuring Outcome Alignment of Agents",
+      "authors": ["Kaiming Liu*", "Yuxuan Liu*", "Jinrui Ju", "Minyuan Ruan", "Xuanyu Lei", "Peng Li", "Yang Liu"],
+      "venue": "Under Review",
+      "year": 2026,
+      "arxiv_year": 2026,
+      "arxiv": "2610.17757",
+      "code": "https://github.com/THUNLP-MT/TiGanEval",
+      "selected": true,
+      "image": "assets/tigan.png",
+      "description": "Can agents infer missing requirements and deliver the outcome a person actually needs?",
+      "color": "neutral"
+    },
+    {
+      "id": "ioa",
+      "short": "IoA",
+      "title": "Illusion of Alignment: Detecting Hidden Disagreement in Collaborative Dialogue",
+      "authors": ["Kaiming Liu", "Fuwen Luo", "Ziyue Wang", "Jinrui Ju", "Yuxuan Liu", "Xuanyu Lei", "Yunghwei Lai", "Peng Li", "Yang Liu"],
+      "venue": "EMNLP 2026 · Main",
+      "year": 2026,
+      "arxiv_year": 2026,
+      "arxiv": "2608.08210",
+      "code": "https://github.com/THUNLP-MT/IoA",
+      "selected": true,
+      "image": "assets/ioa.png",
+      "description": "Surfacing hidden disagreements when a conversation appears to end in agreement.",
+      "color": "blue"
+    },
+    {
+      "id": "align",
+      "short": "ALIGN",
+      "title": "Agent-Environment Alignment via Automated Interface Generation",
+      "authors": ["Kaiming Liu", "Xuanyu Lei", "Ziyue Wang", "Peng Li", "Yang Liu"],
+      "venue": "AACL-IJCNLP 2026 · Main",
+      "year": 2026,
+      "arxiv_year": 2025,
+      "arxiv": "2505.21055",
+      "code": "https://github.com/THUNLP-MT/ALIGN",
+      "selected": true,
+      "image": "assets/align.png",
+      "description": "Automatically generating interfaces that help agents understand and act in their environments.",
+      "color": "teal"
+    },
+    {
+      "id": "aigs",
+      "short": "AIGS",
+      "title": "AIGS: Generating Science from AI-Powered Automated Falsification",
+      "authors": ["Zijun Liu*", "Kaiming Liu*", "Yiqi Zhu*", "Xuanyu Lei*", "Zonghan Yang*", "Zhenhe Zhang", "Peng Li", "Yang Liu"],
+      "venue": "Tech Report · 2024",
+      "year": 2024,
+      "arxiv_year": 2024,
+      "arxiv": "2411.11910",
+      "code": "https://github.com/AgentForceTeamOfficial/Baby-AIGS",
+      "project": "https://agent-force.github.io/AIGS/",
+      "selected": true,
+      "image": "assets/aigs.svg",
+      "description": "A multi-agent research system that puts scientific hypotheses to the test through falsification.",
+      "color": "neutral"
+    },
+    {
+      "id": "mimo",
+      "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
+      "authors": ["Xiaomi LLM-Core Team (including Kaiming Liu)"],
+      "bib_authors": "{Xiaomi LLM-Core Team}",
+      "venue": "Tech Report · 2026",
+      "year": 2026,
+      "arxiv": "2610.11959"
+    },
+    {
+      "id": "state2state",
+      "title": "State2State: Environment-Derived Mid-Training for LLM Agents",
+      "authors": ["Xuanyu Lei", "Yiqi Zhu", "Chenliang Li", "Kaiming Liu", "Peng Li", "Ming Yan", "Jieping Ye", "Ya-Qin Zhang", "Yang Liu"],
+      "venue": "Preprint · 2026",
+      "year": 2026,
+      "arxiv": "2608.04934"
+    },
+    {
+      "id": "beyond-words",
+      "title": "Beyond Words: Evaluating and Bridging Epistemic Divergence in User-Agent Interaction via Theory of Mind",
+      "authors": ["Minyuan Ruan*", "Ziyue Wang*", "Kaiming Liu", "Yunghwei Lai", "Peng Li", "Yang Liu"],
+      "venue": "Under Review · 2026",
+      "year": 2026,
+      "arxiv": "2602.13832"
+    },
+    {
+      "id": "doctor-r1",
+      "title": "Doctor-R1: Mastering Clinical Inquiry with Experiential Agentic Reinforcement Learning",
+      "authors": ["Yunghwei Lai", "Kaiming Liu", "Ziyue Wang", "Weizhi Ma", "Yang Liu"],
+      "venue": "ICLR 2026",
+      "year": 2026,
+      "arxiv_year": 2025,
+      "arxiv": "2510.04284"
+    },
+    {
+      "id": "writing-rl",
+      "title": "Writing-RL: Advancing Long-form Writing via Adaptive Curriculum Reinforcement Learning",
+      "authors": ["Xuanyu Lei", "Chenliang Li", "Yuning Wu", "Kaiming Liu", "Weizhou Shen", "Peng Li", "Ming Yan", "Fei Huang", "Ya-Qin Zhang", "Yang Liu"],
+      "venue": "ACL 2026 · Main",
+      "year": 2026,
+      "arxiv_year": 2025,
+      "arxiv": "2506.05760",
+      "paper": "https://aclanthology.org/2026.acl-long.255/"
+    },
+    {
+      "id": "edc2-rag",
+      "title": "Efficient Dynamic Clustering-Based Document Compression for Retrieval-Augmented-Generation",
+      "authors": ["Weitao Li", "Xiangyu Zhang", "Kaiming Liu", "Xuanyu Lei", "Weizhi Ma", "Yang Liu"],
+      "venue": "EMNLP 2025 · Findings",
+      "year": 2025,
+      "arxiv": "2504.03165",
+      "paper": "https://aclanthology.org/2025.findings-emnlp.522/"
+    },
+    {
+      "id": "unified-alignment",
+      "title": "Towards Unified Alignment Between Agents, Humans, and Environment",
+      "authors": ["Zonghan Yang*", "An Liu*", "Zijun Liu*", "Kaiming Liu", "Fangzhou Xiong", "Yile Wang", "Zeyuan Yang", "Qingyuan Hu", "Xinrui Chen", "Zhenhe Zhang", "Fuwen Luo", "Zhicheng Guo", "Peng Li", "Yang Liu"],
+      "venue": "ICML 2024",
+      "year": 2024,
+      "arxiv": "2402.07744"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kming-l.github.io/sitemap.xml
